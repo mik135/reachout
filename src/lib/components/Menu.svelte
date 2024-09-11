@@ -19,7 +19,7 @@
 <svelte:body onclick={closeMenu}/>
 
 <section>
-	<div class="navbar bg-base-100 bg-white relative">
+	<div class="navbar bg-base-100 bg-white relative lg:hidden">
 		<div class="navbar-start">
 			<button class="btn btn-ghost btn-circle">
 				<svg

@@ -9,13 +9,19 @@
     }
 </script>
 
-<nav class="w-full py-3 px-2 flex gap-5">
-    <select class="select select-primary w-full max-w-xs bg-white">
+<nav class="w-full py-3 px-2 flex gap-5 lg:justify-between lg:items-center">
+    <select class="select select-primary w-full lg:w-fit bg-white">
         <option disabled selected>Choose a language</option>
         <option>Filipino</option>
         <option>English</option>
     </select>
-    <button class="btn btn-primary text-white" onclick={() => my_modal_1.showModal()}>Login</button>
+    <div class="hidden lg:flex lg:gap-5 lg:text-lg">
+        <a href="" class="text-blue-600 font-bold">Home</a>
+        <a href="">ReachOut World Campaigns</a>
+        <a href="">Sponsor</a>
+        <a href="">Signup</a>
+    </div>
+    <button class="btn btn-primary text-white lg:w-32" onclick={() => my_modal_1.showModal()}>Login</button>
 </nav>
 
 <dialog id="my_modal_1" class="modal">
