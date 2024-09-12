@@ -1,11 +1,20 @@
 <script>
     const { img, title, content, btnMsg } = $props()
+
+    let lineClamp = $state(false)
+
+    function addLineClamp() {
+        lineClamp = true
+    }
+    function removeLineClamp() {
+        lineClamp = false
+    }
 </script>
 
-<div class="flex flex-col gap-5">
-    <enhanced:img loading="lazy" src={img} alt={title} class={img.includes("ROWDAY") ? "hidden md:block rounded-xl shadow-2xl md:min-h-52 md:max-h-52" : "rounded-xl shadow-2xl md:min-h-52 md:max-h-52"}>
+<div class="flex flex-col gap-5 cursor-pointer container">
+    <img loading="lazy" src={"./" + img} alt={title} class={img.includes("ROWDAY") ? "hidden md:block rounded-xl shadow-2xl md:min-h-52 md:max-h-52" : "rounded-xl shadow-2xl md:min-h-52 md:max-h-52"}>
     <h3 class="uppercase">{title}</h3>
-    <p class="md:flex-1 md:overflow-hidden md:line-clamp-3">{content}</p>
+    <p class="md:flex-1 md:overflow-hidden md:line-clamp-3 md:hover:line-clamp-none hover:transition-all">{content}</p>
     {#if btnMsg == "Give" || btnMsg.includes("bigay")}
     <div class="grid grid-cols-2 gap-5">
         <button class="btn btn-outline">Signup</button>
@@ -32,6 +41,19 @@
 
 <style lang="postcss">
     h3 {
-		@apply text-2xl font-bold text-[#344767] min-[600px]:text-4xl md:text-xl
+		@apply text-2xl font-bold text-[#344767] min-[600px]:text-4xl md:text-xl;
 	}
+    p:hover {
+        animation: revealing 300ms ease-out;
+    }
+    @keyframes revealing {
+        0% {
+            @apply line-clamp-6;
+            opacity: 0.8;
+        }
+        100% {
+            @apply line-clamp-none;
+            opacity: 1;
+        }
+    }
 </style>
