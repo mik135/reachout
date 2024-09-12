@@ -67,3 +67,73 @@ export const cardInfo = [
     }
 
 ]
+
+
+export const cardInfoFilipino = [
+    {
+      img: "images/ROWDAY_BANNER_COMPRESSED.webp",
+      title: "LUMABAN NG MUNDO PARA SA RHAPSODY OF REALITIES",
+      content: 'Ang ReachOut World Day ay "ReachOut 24/7"; isang 24-oras na nakalaan para masaklaw ang buong mundo gamit ang Rhapsody of Realities sa lahat ng kilalang wika at dayalekto. Higit pa sa pagabot sa buong mundo, higit sa 7 bilyong tao ang mabisang madidisipulo habang sila ay nakikipag-ugnayan sa Rhapsody of Realities sa isang responsable na paraan.',
+      btnMsg: "MAG-REHISTRO NGAYON"
+    },
+    {
+      img: "images/Loveworld-Liverpool.webp",
+      title: "Reachout World Day Panalangin ng Martsa", 
+      content: 'Sumali sa napakalakas na Reachout World Day Panalangin ng Martsa patungo sa ReachOut world day sa pamamagitan ng 1billionminutes.mystreamspace.org',
+      btnMsg: "MANALANGIN NGAYON"
+    },
+    {
+      img: "images/Enlist.webp",
+      title: "SPONSOR",
+      content: "Magpagawa ng mga kopya ng Rhapsody na available sa lahat ng wika at sa lahat ng kategorya habang ikaw ay nag-i-sponsor ng mga wika, nag-i-sponsor ng distribusyon sa lansangan, at nag-i-sponsor ng ReachOut World Day.",
+      btnMsg: "SPONSOR"
+    },
+    {
+      img: "images/No-One-Left-Behind.webp",
+      title: "Walang Naiwan",
+      content: "Ang Rhapsody of Realities ay available din sa Braille para sa mga matatanda, teenager at mga bata. Sumali sa amin sa pagabot sa mga taong may special needs gamit ang Salita ng Diyos.",
+      btnMsg: "Magbigay"
+    },
+    {
+      img: "images/Kids.webp",
+      title: "Sumali sa 'Sabihin Mo Oo sa Mga Bata' Campaign",
+      content: "Sumali sa amin sa pagabot sa mga bata gamit ang Rhapsody for Early Readers, Kiddies Rhapsody at lahat ng iba pang materyales para sa mga bata habang nagbibigay kami ng pundasyon ng Salita ng Diyos upang mapalaki ang mga bata sa tamang paraan.",
+      btnMsg: "Magbigay"
+    },
+    {
+      img: "images/Teevo.webp",
+      title: "Teens Teevolution",
+      content: "Sumali sa amin sa pagabot sa mga teenager sa buong mundo gamit ang “Rhapsody Teevo”, isang pang-araw-araw na debosyonal na espesyal na designed para sa kanila. Ang Salita ng Diyos sa kamay ng bawat teenager ay isang secured na kinabukasan.",
+      btnMsg: "Magbigay"
+    },
+    {
+      img: "images/adopt.webp",
+      title: "Mag-adopt ng Wika",
+      content: "Sumali sa amin upang maabot at mapasok ang bawat wikang hindi pa nakuha, at magpasaya ng milyun-milyong mukha habang natatanggap nila ang pang-araw-araw na debosyonal sa kanilang sariling wika!",
+      btnMsg: "Magbigay"
+    },
+    {
+      img: "images/penetrate.webp",
+      title: "Pagpasok sa Wika",
+      content: "Ang mundo natin ay lubos na nangangailangan ng mga sagot, at napakaraming boses. Ang Rhapsody of Realities na available sa lahat ng kilalang wika ng mundo ay SAGOT ng Diyos at ito ay naging posible sa pamamagitan ng aming mga Tagapagsalin.",
+      btnMsg: "Magbigay"
+    },
+    {
+      img: "images/Enlist.webp",
+      title: "HANAPIN ANG MGA SPONSOR",
+      content: " hikayatin ang iba na sumali. Hikayatin ang mga kaibigan, pamilya, kasamahan, institusyon, organisasyon at marami pang iba na makipagtulungan sa amin at ipadala ang Rhapsody sa buong mundo",
+      btnMsg: "Mag-refer ng Kaibigan"
+    },
+    {
+      img: "images/Languages.webp",
+      title: "Rhapsody of Realities sa 8,123 wika at 4,000 dayalekto!",
+      content: "Bawat wika, isang kayamanan. Sumali sa amin, habang patuloy kaming ginagawa ang pang-araw-araw na debosyonal na magagamit sa mas maraming tao sa wika ng kanilang mga puso. Sponsor ang libreng pamamahagi ng Rhapsody of Realities sa anumang wika na iyong pinili!",
+      btnMsg: "Matuto Pa"
+    },
+    {
+      img: "images/ror.webp",
+      title: "Tungkol sa Rhapsody of Realities",
+      content: "Ang pang-araw-araw na debosyonal na Rhapsody of Realities ay isang gabay sa buhay, na idinisenyo upang mapahusay ang iyong espirituwal na paglaki at pag-unlad sa pamamagitan ng pagdadala sa iyo ng isang sariwang pananaw mula sa Salita ng Diyos araw-araw.",
+      btnMsg: "Bisitahin ang Website"
+    }
+  ];

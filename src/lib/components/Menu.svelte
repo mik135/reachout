@@ -1,5 +1,6 @@
 <script>
 	import InnerMenu from './InnerMenu.svelte';
+	let { language } = $props()
 
 	let revealed = $state(false);
     let dropdown
@@ -19,7 +20,7 @@
 <svelte:body onclick={closeMenu}/>
 
 <section>
-	<div class="navbar bg-base-100 bg-white relative lg:hidden">
+	<div class="navbar bg-base-100 bg-white relative lg:hidden/">
 		<div class="navbar-start">
 			<button class="btn btn-ghost btn-circle">
 				<svg
@@ -78,6 +79,6 @@
 		</div>
 	</div>
 	{#if revealed}
-		<InnerMenu />
+		<InnerMenu {language}/>
 	{/if}
 </section>

@@ -1,14 +1,24 @@
 <script>
     import "../app.css";
+    import Home from "$lib/components/Home.svelte";
     import Navbar from "$lib/components/Navbar.svelte";
     import Menu from "$lib/components/Menu.svelte";
-    let { children } = $props()
+
+    let language = $state("english")
+    function changeLang(e) {
+        language = e.target.value
+    }
+
+    
+    
 </script>
 
-<Navbar />
-<Menu />
+<Navbar {language} {changeLang}/>
+<Menu {language}/>
 
-{@render children()}
+<Home language={language}/>
+
+
 
 <style lang="postcss">
     :global(body) {
@@ -16,3 +26,7 @@
         min-height: 100vh;
     }
 </style>
+
+
+
+
