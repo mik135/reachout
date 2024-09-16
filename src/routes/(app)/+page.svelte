@@ -2,17 +2,12 @@
     let { form } = $props()
     let dialogOne
     let dialogTwo
-
-    if(form?.error) {
-      dialogOne.show()
-    } else {
-      dialogTwo.show()
-    }
+    
 </script>
 
 {#if form?.error}
 
-<dialog id="my_modal_12" class="modal " bind:this={dialogOne}>
+<dialog id="my_modal_12" class="modal " open>
   <div class="modal-box">
     <h3 class="text-lg font-bold">Hello!</h3>
     <p class="py-4">Press ESC key or click the button below to close</p>
@@ -28,7 +23,7 @@
 {/if}
 
 {#if form?.success || form?.message}
-<dialog id="my_modal_13" class="modal" bind:this={dialogTwo}>
+<dialog id="my_modal_13" class="modal" open>
     <div class="modal-box">
       <h3 class="text-3xl font-bold mb-5">Hello {form.name}, Welcome!</h3>
       <h1 class="text-xl text-white">This is your enlisting link</h1>
