@@ -21,7 +21,7 @@
       <h3 class="font-bold pt-3 pb-2 text-3xl">COMPLETE YOUR REGISTRATION</h3>
       <p class="text-white pb-7 text-sm">Please take a moment to share your information with us. We promise to keep it safe and secure, and to use it only to enhance your Reachout World Experience</p>
       <div class="flex flex-col gap-5">
-        <form action="?/createUser" method="POST" class="flex flex-col gap-5" onsubmit={handleSubmit} use:enhance>
+        <form action="?/createUser" method="POST" class="flex flex-col gap-5" onsubmit={handleSubmit}>
             <label class="input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
