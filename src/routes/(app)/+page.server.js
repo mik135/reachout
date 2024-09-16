@@ -17,19 +17,25 @@ export const actions = {
         }
         if(data.length > 0) {
             console.log('Email Found')
-            const { id, errorRef } = await supabase.from('users').select('refID').eq('email', email).single()
-            console.log(id)
-            return {
-                message: "Email already exists"
+            const { data: users, errorRef } = await supabase.from('users').select('refID', 'firstName').match({ email }).single();
+            if(errorRef) {
+                return fail(422, {
+                    error: "Referral ID cannot be retrieved"
+                })
+            } else {
+                return {
+                    message: "Email already exists",
+                    refID: users.refID
+                }
             }
+            
         } else {
-            const { data, error } = await supabase.from('users').insert([
+            const {insertData, insertError } = await supabase.from('users').insert([
                 { firstName: firstName, email: email, address: address, referralCount: referralCount },
             ]).select()
-            const { users, errorRef } = await supabase.from('users').select('refID', 'firstName').eq('email', email).single()
-            console.log(users)
+            const { data: users, errorRef } = await supabase.from('users').select('refID', 'firstName').match({ email }).single();
 
-            if(error || errorRef) {
+            if(insertError || errorRef) {
                 return fail(422, {
                     error: "User cannot be added to database"
                 })
@@ -37,8 +43,9 @@ export const actions = {
                 return {
                     status: 200,
                     success: "User saved to database",
-                    refID: id,
-                    name: firstName
+                    refID: users.refID,
+                    name: firstName,
+                    newInfo: insertData
                 }
             }
         }
