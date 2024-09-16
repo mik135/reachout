@@ -25,7 +25,7 @@
       <h3 class="text-3xl font-bold mb-5">Hello {form.name}, Welcome!</h3>
       <h1 class="text-xl text-white">This is your enlisting link</h1>
       <p class="text-white text-lg">Share it to your friends and families. Spread the word!</p>
-      <h3>https://reachout-sliv.vercel.app/{form.refID}</h3>
+      <h3>https://reachout-sliv.vercel.app/sponsor/{form.refID ? form.refID : 1234}</h3>
       <div class="modal-action">
         <form method="dialog">
           <!-- if there is a button in form, it will close the modal -->
