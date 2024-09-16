@@ -2,7 +2,7 @@ import { supabase } from "$lib/supabaseClient";
 import { fail } from "@sveltejs/kit"
 
 export const actions = {
-    createUser: async({ request }) => {
+    create: async({ request }) => {
         const formData = await request.formData()
         const firstName = formData.get('firstName')
         const email = formData.get('email')
@@ -41,6 +41,13 @@ export const actions = {
                     name: firstName
                 }
             }
+        }
+    },
+    do: async({ request }) => {
+        const data = await request.formData()
+        console.log(data)
+        return {
+            done: "Absolutely"
         }
     }
 }

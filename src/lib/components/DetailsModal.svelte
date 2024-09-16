@@ -7,12 +7,7 @@
     let confirmationDialog
 
     let loading = $state(false)
-    function handleSubmit() {
-        loading = true
-        setTimeout(() => {
-          dialog.close()
-        }, 1000)
-    }
+    
 </script>
 
 <dialog id="my_modal_17" class="modal" bind:this={dialog}>
@@ -21,7 +16,14 @@
       <h3 class="font-bold pt-3 pb-2 text-3xl">COMPLETE YOUR REGISTRATION</h3>
       <p class="text-white pb-7 text-sm">Please take a moment to share your information with us. We promise to keep it safe and secure, and to use it only to enhance your Reachout World Experience</p>
       <div class="flex flex-col gap-5">
-        <form action="?/createUser" method="POST" class="flex flex-col gap-5" onsubmit={handleSubmit}>
+        <form action="?/create" method="POST" class="flex flex-col gap-5" use:enhance={() => {
+          loading = true
+          return async ({ update }) => {
+			      await update();
+            dialog.close()
+			      loading = false;
+		      };
+        }}>
             <label class="input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +74,7 @@
               <span class="loading loading-spinner text-primary"></span>
             </button>
             {:else}
-            <button class="btn btn-accent w-full">
+            <button class="btn btn-accent w-full" type="submit">
               Proceed
             </button>
             {/if}

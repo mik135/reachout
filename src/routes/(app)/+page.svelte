@@ -1,12 +1,9 @@
 <script>
     let { form } = $props()
-    let dialogOne
-    let dialogTwo
     
 </script>
 
 {#if form?.error}
-
 <dialog id="my_modal_12" class="modal " open>
   <div class="modal-box">
     <h3 class="text-lg font-bold">Hello!</h3>
@@ -37,6 +34,10 @@
       </div>
     </div>
   </dialog>
+{/if}
+
+{#if form?.done}
+<h1>{form.done}</h1>
 {/if}
 
 
