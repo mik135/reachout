@@ -90,12 +90,6 @@
 		background-color: theme(colors.gray.100);
 	}
 
-	.bg-gradient-signup {
-		background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
-	}
-	.bg-gradient-give {
-		background-image: linear-gradient(310deg, #f53939 0%, #fbcf33 100%);
-	}
 	.bg-gradient-watch {
 		background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%)
 	}

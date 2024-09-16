@@ -47,11 +47,11 @@
         animation: revealing 300ms ease-out;
     }
     @keyframes revealing {
-        0% {
+        from{
             @apply line-clamp-6;
             opacity: 0.8;
         }
-        100% {
+        to {
             @apply line-clamp-none;
             opacity: 1;
         }
