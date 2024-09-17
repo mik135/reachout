@@ -15,37 +15,43 @@ export const cardInfo = [
         img: "images/Enlist.webp",
         title: "SPONSOR",
         content: "Make copies of Rhapsody available in all languages and in all categories as you sponsor languages, sponsor street distribution, and sponsor the ReachOut World Day.",
-        btnMsg: "SPONSOR"
+        btnMsg: "SPONSOR",
+        category: "sponsor"
     },
     {
         img: "images/No-One-Left-Behind.webp",
         title: "No one left behind",
         content: "Rhapsody of Realities is also available in Braille for adults, teenagers and the kids. Join us reaching those special needs with God's Word.",
-        btnMsg: "Give"
+        btnMsg: "Give",
+        category: "No one left behind"
     },
     {
         img: "images/Kids.webp",
         title: "Join The 'Say Yes to Kids' Campaign",
         content: "Join us in reaching children with Rhapsody for Early Readers, Kiddies Rhapsody and all other children’s materials as we provide a foundation of God’s Word to build children up the right way.",
-        btnMsg: "Give"
+        btnMsg: "Give",
+        category: "Say Yes to Kids' Campaign"
     },
     {
         img: "images/Teevo.webp",
         title: "Teens Teevolution",
         content: "Join us in reaching teenagers around the world with “Rhapsody Teevo”, a daily devotional specially designed for them. God’s Word in the hands of every teenager is a future secured.",
-        btnMsg: "Give"
+        btnMsg: "Give",
+        category: "Teevo"
     },
     {
         img: "images/adopt.webp",
         title: "Adopt A Language",
         content: "Join us to reach and penetrate every language yet to be acquired, and put a smile on millions of faces as they receive the daily devotional in their own language!",
-        btnMsg: "Give"
+        btnMsg: "Give",
+        category: "Adopt a Language"
     },
     {
         img: "images/penetrate.webp",
         title: "Penetrating with Languages",
         content: "Our world is in dire need of answers, and there are so many voices. Rhapsody of Realities being available in all known languages of the world is God’s ANSWER and this has been made possible by our Translators.",
-        btnMsg: "Give"
+        btnMsg: "Give",
+        category: "Penetrating with Languages"
     },
     {
         img: "images/Enlist.webp",

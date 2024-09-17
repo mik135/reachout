@@ -52,7 +52,7 @@
 		</section>
 		<section class="grid gap-7 md:grid-cols-2 xl:grid-cols-3 lg:px-32 md:my-10">
 			{#each firstGrid as data}
-				<Card img={data.img} title={data.title} content={data.content} btnMsg={data.btnMsg}/>
+				<Card img={data.img} title={data.title} content={data.content} btnMsg={data.btnMsg} category={data.category}/>
 			{/each}
 		
 		</section>
@@ -63,7 +63,7 @@
 
 	<div class="px-3 py-5 grid gap-10 md:grid-cols-2 xl:grid-cols-3 lg:px-32 md:my-10">
 		{#each secondGrid as data}
-				<Card img={data.img} title={data.title} content={data.content} btnMsg={data.btnMsg}/>
+				<Card img={data.img} title={data.title} content={data.content} btnMsg={data.btnMsg} category={data.category}/>
 		{/each}
 	</div>
 
@@ -73,7 +73,7 @@
 
 	<div class="px-3 py-5 grid gap-10 md:grid-cols-2 xl:grid-cols-3 lg:px-32 md:my-16">
 		{#each thirdGrid as data}
-				<Card img={data.img} title={data.title} content={data.content} btnMsg={data.btnMsg}/>
+				<Card img={data.img} title={data.title} content={data.content} btnMsg={data.btnMsg} category={data.category}/>
 		{/each}
 	</div>
 	<div class="px-3 py-5 grid gap-10 md:grid-cols-2 lg:px-32 md:my-10">

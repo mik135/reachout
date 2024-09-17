@@ -1,5 +1,8 @@
 <script>
-    const { img, title, content, btnMsg } = $props()
+    import SponsorModal from "./SponsorModal.svelte"
+    const { img, title, content, btnMsg, category } = $props()
+
+    let modal
 
     let lineClamp = $state(false)
 
@@ -17,8 +20,7 @@
     <p class="md:flex-1 md:overflow-hidden md:line-clamp-3 md:hover:line-clamp-none hover:transition-all">{content}</p>
     {#if btnMsg == "Give" || btnMsg.includes("bigay")}
     <div class="grid grid-cols-2 gap-5">
-        <button class="btn btn-outline">Signup</button>
-        <button class="btn btn-success text-white font-extrabold">{btnMsg}</button>
+        <button class="btn btn-success text-white font-extrabold"  onclick={() => modal.showModal()}>{btnMsg}</button>
     </div>
     {:else if btnMsg == "Learn More" || btnMsg.includes("Matuto")}
     <div class="grid grid-cols-2">
@@ -26,11 +28,15 @@
     </div>
     {:else if btnMsg.includes("PRAY") || btnMsg.includes("MANALANGIN")}
     <div class="grid grid-cols-2">
-        <a href="https://1billionminutes.mystreamspace.org"><button class="btn text-white font-extrabold">{btnMsg}</button></a>
+        <a href="https://1billionminutes.mystreamspace.org"><button class="btn text-white font-extrabold w-full">{btnMsg}</button></a>
     </div>
     {:else if btnMsg.includes("Website")}
     <div class="grid grid-cols-2">
         <button class="btn btn-outline btn-secondary font-extrabold">{btnMsg}</button>
+    </div>
+    {:else if btnMsg.includes("SPONSOR")}
+    <div class="grid grid-cols-2">
+        <button class="btn text-white font-extrabold" onclick={() => modal.showModal()}>{btnMsg}</button>
     </div>
     {:else}
     <div class="grid grid-cols-2">
@@ -38,6 +44,10 @@
     </div>
     {/if}
 </div>
+
+
+<SponsorModal bind:dialogRef={modal} {category}/>
+
 
 <style lang="postcss">
     h3 {
