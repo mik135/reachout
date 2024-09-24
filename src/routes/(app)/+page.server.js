@@ -61,16 +61,18 @@ export const actions = {
         const formData = await request.formData()
         const email = formData.get('email')
 
-        const { data: users, error } = await supabase.from('users').select('refID', 'firstName').match({ email }).single();
-        
-        if(error) {
+        const { data: usersRef, errorOne } = await supabase.from('users').select('refID').match({ email }).single();
+        const { data: usersName, errorTwo } = await supabase.from('users').select('firstName').match({ email }).single();
+
+        if(errorOne || errorTwo) {
             return fail(422, {
                 error: "You're not yet registered. Please Login First."
             })
         } else {
+            
             return {
-                eRefID: users.refID,
-                eFirstName: users.firstName
+                eRefID: usersRef.refID,
+                eFirstName: usersName.firstName,
             }
         }
        

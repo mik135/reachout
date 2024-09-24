@@ -35,7 +35,7 @@
     </div>
   </dialog>
 {/if}
-{#if form?.eRefID}
+{#if form?.eRefID && form?.eFirstName}
 <dialog id="my_modal_13" class="modal" open>
     <div class="modal-box">
       <h3 class="text-3xl font-bold mb-5 text-white">Hello {form.eFirstName}, Welcome Back!</h3>
