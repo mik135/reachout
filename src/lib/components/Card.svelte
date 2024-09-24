@@ -54,11 +54,10 @@
 		@apply text-2xl font-bold text-[#344767] min-[600px]:text-4xl md:text-xl;
 	}
     p:hover {
-        animation: revealing 300ms ease-out;
+        animation: revealing  500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
     }
     @keyframes revealing {
         from{
-            @apply line-clamp-6;
             opacity: 0.8;
         }
         to {

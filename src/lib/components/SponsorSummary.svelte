@@ -7,6 +7,26 @@
     
   
     let totalAmount = $derived(quantity * price);
+
+    let itemInfo = $derived([{
+      category: category,
+      quantity: quantity,
+      email: email,
+      price: price,
+    }])
+
+    async function checkout() {
+      const data = await fetch("/give", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          items: itemInfo,
+        }),
+      }).then((data) => data.json())
+      window.location.replace(data.url)
+    }
   </script>
   
   
@@ -22,16 +42,12 @@
               <p class="text-indigo-200 text-xl flex justify-between">Email: <span class="text-white">{email}</span></p>
               <p class="text-indigo-200 text-xl flex justify-between">Name: <span class="text-white">{name}</span></p>
               <p class="text-indigo-200 text-xl flex justify-between flex-wrap">Category: <span class="text-white">{category}</span></p>
-              <p class="text-indigo-200 text-xl flex justify-between">Amount: <span class="text-white">${price}</span></p>
+              <p class="text-indigo-200 text-xl flex justify-between">Amount: <span class="text-white">₱{price}</span></p>
             </div>
             <QuantityCounter {quantity} {decrementQuantity} {incrementQuantity}/>
         </div>
-        <h5 class="text-xl flex justify-between mt-3">Total Amount: <span class="text-white font-extrabold">${totalAmount}</span></h5>
-        {#if category == "Teevo"}
-            <a href="https://donate.stripe.com/test_bIYcP3gDa5wc9kQbIJ?locale=fil"><button class="btn btn-accent w-full mt-5">Pay</button></a>
-        {:else}
-        <a href="https://donate.stripe.com/test_8wMcP30Ec7EkaoU000?locale=fil"><button class="btn btn-accent w-full mt-5">Pay</button></a>
-        {/if}
+        <h5 class="text-xl flex justify-between mt-3">Total Amount: <span class="text-white font-extrabold">₱{totalAmount}</span></h5>
+        <button class="btn btn-accent w-full mt-5" onclick={checkout}>Pay</button>
           
       <div class="modal-action">
       </div>

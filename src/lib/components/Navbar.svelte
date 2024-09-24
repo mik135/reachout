@@ -19,7 +19,7 @@
 
 </script>
 
-<nav class="w-full py-3 px-2 flex gap-5 lg:justify-between lg:items-center">
+<nav class="w-full py-3 px-2 flex gap-5 lg:justify-between lg:items-center sticky top-0 bg-white h-fit shadow-xl">
     <select class="select select-primary w-full lg:w-fit bg-white" bind:value={language} onchange={changeLang}>
         <option disabled selected>Choose a language</option>
         <option value="filipino">Filipino</option>
