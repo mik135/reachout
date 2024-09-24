@@ -6,7 +6,7 @@
 
 <ul class="menu bg-base-200 text-[1.1rem] shadow-xl rounded-box w-80 mt-2 mr-3 ml-auto absolute right-0">
     <li>
-      <a>
+      <a href="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -23,7 +23,7 @@
       </a>
     </li>
     <li>
-      <a>
+      <a href="https://reachoutworld.org/reachout-world/campaigns">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -57,7 +57,7 @@
       </a>
     </li>
     <li>
-      <a>
+      <a href="/sponsor/me">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"

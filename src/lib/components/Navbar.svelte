@@ -27,8 +27,8 @@
     </select>
     <div class="hidden lg:flex lg:gap-5 lg:text-lg">
         <a href="" class="text-blue-600 font-bold">{language == "filipino" ? "Tahanan" : "Home"}</a>
-        <a href="">ReachOut World Campaigns</a>
-        <a href="">{language == "filipino" ? "Tagapagtaguyod" : "Sponsor"}</a>
+        <a href="https://reachoutworld.org/reachout-world/campaigns">ReachOut World Campaigns</a>
+        <a href="/sponsor/me">{language == "filipino" ? "Tagapagtaguyod" : "Sponsor"}</a>
         <a href="">Signup</a>
     </div>
     <button class="btn btn-primary text-white lg:w-32" onclick={openModal}>Login</button>

@@ -24,7 +24,7 @@
     </div>
     {:else if btnMsg == "Learn More" || btnMsg.includes("Matuto")}
     <div class="grid grid-cols-2">
-        <button class="btn btn-secondary text-white font-extrabold">{btnMsg}</button>
+         <a href="https://give.rhapsodyofrealities.org"></a><button class="btn btn-secondary text-white font-extrabold">{btnMsg}</button>
     </div>
     {:else if btnMsg.includes("PRAY") || btnMsg.includes("MANALANGIN")}
     <div class="grid grid-cols-2">
@@ -32,7 +32,7 @@
     </div>
     {:else if btnMsg.includes("Website")}
     <div class="grid grid-cols-2">
-        <button class="btn btn-outline btn-secondary font-extrabold">{btnMsg}</button>
+        <a href="https://rhapsodyofrealities.org"></a><button class="btn btn-outline btn-secondary font-extrabold">{btnMsg}</button>
     </div>
     {:else if btnMsg.includes("SPONSOR")}
     <div class="grid grid-cols-2">

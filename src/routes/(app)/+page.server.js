@@ -56,5 +56,23 @@ export const actions = {
         return {
             done: "Absolutely"
         }
+    },
+    getlink: async({ request }) => {
+        const formData = await request.formData()
+        const email = formData.get('email')
+
+        const { data: users, error } = await supabase.from('users').select('refID', 'firstName').match({ email }).single();
+        
+        if(error) {
+            return fail(422, {
+                error: "You're not yet registered. Please Login First."
+            })
+        } else {
+            return {
+                eRefID: users.refID,
+                eFirstName: users.firstName
+            }
+        }
+       
     }
 }
