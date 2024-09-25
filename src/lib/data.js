@@ -12,7 +12,7 @@ export const cardInfo = [
         btnMsg: "PRAY NOW"
     },
     {
-        img: "images/Enlist.webp",
+        img: "images/sponsorPhilippine.jpg",
         title: "SPONSOR",
         content: "Make copies of Rhapsody available in all languages and in all categories as you sponsor languages, sponsor street distribution, and sponsor the ReachOut World Day.",
         btnMsg: "SPONSOR",
@@ -54,7 +54,7 @@ export const cardInfo = [
         category: "Penetrating with Languages"
     },
     {
-        img: "images/Enlist.webp",
+        img: "images/sponsorPhilippine.jpg",
         title: "ENLIST SPONSORS",
         content: "Get others to join in. Enlist friends, family, colleagues, institutions, organizations and more to partner with us and send Rhapsody around the world",
         btnMsg: "Refer a Friend"
@@ -89,7 +89,7 @@ export const cardInfoFilipino = [
       btnMsg: "MANALANGIN NGAYON"
     },
     {
-      img: "images/Enlist.webp",
+      img: "images/sponsorPhilippine.jpg",
       title: "SPONSOR",
       content: "Magpagawa ng mga kopya ng Rhapsody na available sa lahat ng wika at sa lahat ng kategorya habang ikaw ay nag-i-sponsor ng mga wika, nag-i-sponsor ng distribusyon sa lansangan, at nag-i-sponsor ng ReachOut World Day.",
       btnMsg: "SPONSOR"
@@ -125,7 +125,7 @@ export const cardInfoFilipino = [
       btnMsg: "Magbigay"
     },
     {
-      img: "images/Enlist.webp",
+      img: "images/sponsorPhilippine.jpg",
       title: "HANAPIN ANG MGA SPONSOR",
       content: " hikayatin ang iba na sumali. Hikayatin ang mga kaibigan, pamilya, kasamahan, institusyon, organisasyon at marami pang iba na makipagtulungan sa amin at ipadala ang Rhapsody sa buong mundo",
       btnMsg: "Mag-refer ng Kaibigan"

@@ -17,7 +17,7 @@
 </script>
 
 <div class="flex flex-col gap-5 cursor-pointer container">
-    <img loading="lazy" src={"./" + img} alt={title} class={img.includes("ROWDAY") ? "hidden md:block rounded-xl shadow-2xl md:min-h-52 md:max-h-52" : "rounded-xl shadow-2xl md:min-h-52 md:max-h-52"}>
+    <div class="w-full md:min-h-52 md:max-h-52"><img loading="lazy" src={"./" + img} alt={title} class={img.includes("ROWDAY") ? "hidden md:block rounded-xl shadow-2xl" : "rounded-xl shadow-2xl w-full h-full"}></div>
     <h3 class="uppercase">{title}</h3>
     <p class="md:flex-1 md:overflow-hidden md:line-clamp-3 md:hover:line-clamp-none hover:transition-all">{content}</p>
     {#if btnMsg == "Give" || btnMsg.includes("bigay")}
