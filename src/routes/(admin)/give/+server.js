@@ -22,8 +22,8 @@ export const POST = async ({ request }) => {
         customer_email: RORitems[0].email,
         line_items: allItems,
         mode: "payment",
-        success_url: env.BASE + "/success",
-        cancel_url: env.BASE + "/cancel"
+        success_url: "https://reachout-sliv.vercel.app/success",
+        cancel_url:  "https://reachout-sliv.vercel.app/cancel"
         
     })
 
