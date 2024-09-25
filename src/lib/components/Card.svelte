@@ -1,8 +1,10 @@
 <script>
     import SponsorModal from "./SponsorModal.svelte"
+    import GetLink from "./GetLink.svelte"
     const { img, title, content, btnMsg, category } = $props()
 
     let modal
+    let enlistModal
 
     let lineClamp = $state(false)
 
@@ -24,7 +26,7 @@
     </div>
     {:else if btnMsg == "Learn More" || btnMsg.includes("Matuto")}
     <div class="grid grid-cols-2">
-         <a href="https://give.rhapsodyofrealities.org"></a><button class="btn btn-secondary text-white font-extrabold">{btnMsg}</button>
+         <a href="https://give.rhapsodyofrealities.org"><button class="btn btn-secondary text-white font-extrabold w-full">{btnMsg}</button></a>
     </div>
     {:else if btnMsg.includes("PRAY") || btnMsg.includes("MANALANGIN")}
     <div class="grid grid-cols-2">
@@ -32,11 +34,15 @@
     </div>
     {:else if btnMsg.includes("Website")}
     <div class="grid grid-cols-2">
-        <a href="https://rhapsodyofrealities.org"></a><button class="btn btn-outline btn-secondary font-extrabold">{btnMsg}</button>
+        <a href="https://rhapsodyofrealities.org"><button class="btn btn-outline btn-secondary font-extrabold w-full">{btnMsg}</button></a>
     </div>
     {:else if btnMsg.includes("SPONSOR")}
     <div class="grid grid-cols-2">
         <button class="btn text-white font-extrabold" onclick={() => modal.showModal()}>{btnMsg}</button>
+    </div>
+    {:else if btnMsg.includes("Refer") || btnMsg.includes("Mag-refer")}
+    <div class="grid grid-cols-2">
+        <button class="btn text-white font-extrabold" onclick={() => enlistModal.showModal()}>{btnMsg}</button>
     </div>
     {:else}
     <div class="grid grid-cols-2">
@@ -47,6 +53,7 @@
 
 
 <SponsorModal bind:dialogRef={modal} {category}/>
+<GetLink bind:enlistLinkModal={enlistModal} />
 
 
 <style lang="postcss">

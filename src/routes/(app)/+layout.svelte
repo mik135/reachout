@@ -3,7 +3,7 @@
     import Navbar from "$lib/components/Navbar.svelte";
     import Menu from "$lib/components/Menu.svelte";
 
-    let language = $state("english")
+    let language = $state("")
     function changeLang(e) {
         language = e.target.value
     }
