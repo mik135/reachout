@@ -61,13 +61,13 @@
 									{language == "filipino" ? "PANOORIN" : "Download Rhapsody App"}</div>
 								<ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-65 text-lg p-4 mt-2 shadow-2xl  ">
 									<li><a href="https://web.lwappstore.com/share/appId-32181354074e5cf63319371178894acd">
-										<button class="flex gap-3 items-center text-white ">
+										<button class="flex gap-3 items-center ">
 											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="orange" class="w-7 h-7"><path d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM144 221.3c0-33.8 27.4-61.3 61.3-61.3c16.2 0 31.8 6.5 43.3 17.9l7.4 7.4 7.4-7.4c11.5-11.5 27.1-17.9 43.3-17.9c33.8 0 61.3 27.4 61.3 61.3c0 16.2-6.5 31.8-17.9 43.3l-82.7 82.7c-6.2 6.2-16.4 6.2-22.6 0l-82.7-82.7c-11.5-11.5-17.9-27.1-17.9-43.3z"/></svg>LoveWorld Store
 										</button>
 									</a></li>
-								  <li><a href="https://play.google.com/store/apps/details?id=com.rhapsodyreader&pli=1"><button class="flex gap-3 text-white">
+								  <li><a href="https://play.google.com/store/apps/details?id=com.rhapsodyreader&pli=1"><button class="flex gap-3">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="green" class="w-7 h-7"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>Google Playstore</button></a></li>
-								  <li><a href="https://apps.apple.com/us/app/rhapsody-of-realities/id463739646"><button class="flex gap-3 text-white">
+								  <li><a href="https://apps.apple.com/us/app/rhapsody-of-realities/id463739646"><button class="flex gap-3">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7" fill="blue"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM127 384.5c-5.5 9.6-17.8 12.8-27.3 7.3-9.6-5.5-12.8-17.8-7.3-27.3l14.3-24.7c16.1-4.9 29.3-1.1 39.6 11.4L127 384.5zm138.9-53.9H84c-11 0-20-9-20-20s9-20 20-20h51l65.4-113.2-20.5-35.4c-5.5-9.6-2.2-21.8 7.3-27.3 9.6-5.5 21.8-2.2 27.3 7.3l8.9 15.4 8.9-15.4c5.5-9.6 17.8-12.8 27.3-7.3 9.6 5.5 12.8 17.8 7.3 27.3l-85.8 148.6h62.1c20.2 0 31.5 23.7 22.7 40zm98.1 0h-29l19.6 33.9c5.5 9.6 2.2 21.8-7.3 27.3-9.6 5.5-21.8 2.2-27.3-7.3-32.9-56.9-57.5-99.7-74-128.1-16.7-29-4.8-58 7.1-67.8 13.1 22.7 32.7 56.7 58.9 102h52c11 0 20 9 20 20 0 11.1-9 20-20 20z"/></svg>Apple App Store
 								  </button></a></li>
 								</ul>
@@ -122,8 +122,8 @@
 				loading = false
 			};
 	  }}>
-		<h3 class="text-2xl text-white font-bold mb-1">Hello!</h3>
-		<p class="text-lg text-white mb-10">Enter your email to get your enlistment link</p>
+		<h3 class="text-2xl font-bold mb-1">Hello!</h3>
+		<p class="text-lg mb-10">Enter your email to get your enlistment link</p>
 		<label class="input input-bordered flex items-center gap-2">
 				<svg
 				  xmlns="http://www.w3.org/2000/svg"

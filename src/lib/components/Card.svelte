@@ -30,7 +30,7 @@
     </div>
     {:else if btnMsg.includes("PRAY") || btnMsg.includes("MANALANGIN")}
     <div class="grid grid-cols-2">
-        <a href="https://1billionminutes.mystreamspace.org"><button class="btn text-white font-extrabold w-full">{btnMsg}</button></a>
+        <a href="https://1billionminutes.mystreamspace.org"><button class="btn hover:bg-slate-800 bg-black text-white font-extrabold w-full">{btnMsg}</button></a>
     </div>
     {:else if btnMsg.includes("Website")}
     <div class="grid grid-cols-2">
@@ -38,15 +38,15 @@
     </div>
     {:else if btnMsg.includes("SPONSOR")}
     <div class="grid grid-cols-2">
-        <button class="btn text-white font-extrabold" onclick={() => modal.showModal()}>{btnMsg}</button>
+        <button class="btn bg-black hover:bg-slate-800 text-white font-extrabold" onclick={() => modal.showModal()}>{btnMsg}</button>
     </div>
     {:else if btnMsg.includes("Refer") || btnMsg.includes("Mag-refer")}
     <div class="grid grid-cols-2">
-        <button class="btn text-white font-extrabold" onclick={() => enlistModal.showModal()}>{btnMsg}</button>
+        <button class="btn bg-black hover:bg-slate-800 text-white font-extrabold" onclick={() => enlistModal.showModal()}>{btnMsg}</button>
     </div>
     {:else}
     <div class="grid grid-cols-2">
-        <button class="btn text-white font-extrabold">{btnMsg}</button>
+        <button class="btn bg-black hover:bg-slate-800 text-white font-extrabold">{btnMsg}</button>
     </div>
     {/if}
 </div>

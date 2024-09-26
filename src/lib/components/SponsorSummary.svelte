@@ -39,10 +39,10 @@
         <h4 class="text-2xl font-bold">Sponsor Summary</h4>
         <div class="">
             <div class="my-7">
-              <p class="text-indigo-200 text-xl flex justify-between">Email: <span class="text-white">{email}</span></p>
-              <p class="text-indigo-200 text-xl flex justify-between">Name: <span class="text-white">{name}</span></p>
-              <p class="text-indigo-200 text-xl flex justify-between flex-wrap">Category: <span class="text-white">{category}</span></p>
-              <p class="text-indigo-200 text-xl flex justify-between">Amount: <span class="text-white">₱{price}</span></p>
+              <p class="dark:text-indigo-500 text-xl flex justify-between">Email: <span class="dark:text-white text-black">{email}</span></p>
+              <p class="dark:text-indigo-500 text-xl flex justify-between">Name: <span class="dark:text-white text-black">{name}</span></p>
+              <p class="dark:text-indigo-500 text-xl flex justify-between flex-wrap">Category: <span class="dark:text-white text-black">{category}</span></p>
+              <p class="dark:text-indigo-500 text-xl flex justify-between">Amount: <span class="dark:text-white text-black">₱{price}</span></p>
             </div>
             <QuantityCounter {quantity} {decrementQuantity} {incrementQuantity}/>
         </div>

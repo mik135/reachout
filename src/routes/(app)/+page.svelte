@@ -8,7 +8,7 @@
 <dialog id="my_modal_12" class="modal " open>
   <div class="modal-box">
     <h1 class="text-3xl text-red-700 font-bold">Oops! Something Went Wrong.</h1>
-    <h3 class="text-xl text-white mt-3">{form.error}</h3>
+    <h3 class="text-xl mt-3">{form.error}</h3>
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
@@ -26,8 +26,8 @@
         <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
       </form>
       <h3 class="text-3xl font-bold mb-5">Hello {form.name}, Welcome Back!</h3>
-      <h1 class="text-xl text-white">This is your enlisting link</h1>
-      <p class="text-white text-lg">Share it to your friends and families. Spread the word!</p>
+      <h1 class="text-xl">This is your enlisting link</h1>
+      <p class="text-lg">Share it to your friends and families. Spread the word!</p>
       <Clipboard linkToCopy={"https://reachout-sliv.vercel.app/sponsor/" + form.refID}/>
       <div class="modal-action">
       </div>
@@ -40,9 +40,9 @@
       <form method="dialog">
         <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
       </form>
-      <h3 class="text-3xl font-bold mb-5 text-white">Hello {form.eFirstName}, Welcome Back!</h3>
-      <h1 class="text-xl text-white">This is your personal enlisting link</h1>
-      <p class="text-white text-lg">Share it to your friends and families. Spread the word!</p>
+      <h3 class="text-3xl font-bold mb-5 ">Hello {form.eFirstName}, Welcome Back!</h3>
+      <h1 class="text-xl">This is your personal enlisting link</h1>
+      <p class=" text-lg">Share it to your friends and families. Spread the word!</p>
       <Clipboard linkToCopy={"https://reachout-sliv.vercel.app/sponsor/" + form.eRefID}/>
       <div class="modal-action">
         

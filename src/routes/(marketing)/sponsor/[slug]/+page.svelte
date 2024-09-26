@@ -143,7 +143,7 @@
                 </select>
             </label>
 
-            <button class="btn mt-7" onclick={checkout}>
+            <button class="btn bg-black hover:bg-slate-900 text-white mt-7" onclick={checkout}>
                 {#if loading}
                     <span class="loading loading-dots loading-lg"></span>
 
