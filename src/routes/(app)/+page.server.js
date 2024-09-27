@@ -65,7 +65,7 @@ export const actions = {
         
         if(errorOne ||usersRef == null) {
             return fail(422, {
-                error: "You're not yet registered. Please Login First."
+                error: "You're not yet registered. Please Register First."
             })
         }
         

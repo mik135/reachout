@@ -33,28 +33,28 @@ export const cardInfo = [
         category: "Say Yes to Kids' Campaign"
     },
     {
-        img: "images/Teevo.webp",
+        img: "images/teenvo3.jpg",
         title: "Teens Teevolution",
         content: "Join us in reaching teenagers around the world with “Rhapsody Teevo”, a daily devotional specially designed for them. God’s Word in the hands of every teenager is a future secured.",
         btnMsg: "Give",
         category: "Teevo"
     },
     {
-        img: "images/adopt.webp",
+        img: "images/adoptLang.jpg",
         title: "Adopt A Language",
         content: "Join us to reach and penetrate every language yet to be acquired, and put a smile on millions of faces as they receive the daily devotional in their own language!",
         btnMsg: "Give",
         category: "Adopt a Language"
     },
     {
-        img: "images/penetrate.webp",
+        img: "images/penetrating2.jpg",
         title: "Penetrating with Languages",
         content: "Our world is in dire need of answers, and there are so many voices. Rhapsody of Realities being available in all known languages of the world is God’s ANSWER and this has been made possible by our Translators.",
         btnMsg: "Give",
         category: "Penetrating with Languages"
     },
     {
-        img: "images/sponsorPhilippine.jpg",
+        img: "images/enlist2.jpg",
         title: "ENLIST SPONSORS",
         content: "Get others to join in. Enlist friends, family, colleagues, institutions, organizations and more to partner with us and send Rhapsody around the world",
         btnMsg: "Refer a Friend"
@@ -66,7 +66,7 @@ export const cardInfo = [
         btnMsg: "Learn More"
     },
     {
-        img: "images/ror.webp",
+        img: "images/philipinerhapsody.jpg",
         title: "About Rhapsody of Realities",
         content: "Rhapsody of Realities daily devotional is a life guide, designed to enhance your spiritual growth and development by bringing you a fresh perspective from God’s Word every day.",
         btnMsg: "Visit Website"
@@ -107,25 +107,25 @@ export const cardInfoFilipino = [
       btnMsg: "Magbigay"
     },
     {
-      img: "images/Teevo.webp",
+      img: "images/teenvo3.jpg",
       title: "Teens Teevolution",
       content: "Sumali sa amin sa pagabot sa mga teenager sa buong mundo gamit ang “Rhapsody Teevo”, isang pang-araw-araw na debosyonal na espesyal na designed para sa kanila. Ang Salita ng Diyos sa kamay ng bawat teenager ay isang secured na kinabukasan.",
       btnMsg: "Magbigay"
     },
     {
-      img: "images/adopt.webp",
+      img: "images/adoptLang.jpg",
       title: "Mag-adopt ng Wika",
       content: "Sumali sa amin upang maabot at mapasok ang bawat wikang hindi pa nakuha, at magpasaya ng milyun-milyong mukha habang natatanggap nila ang pang-araw-araw na debosyonal sa kanilang sariling wika!",
       btnMsg: "Magbigay"
     },
     {
-      img: "images/penetrate.webp",
+      img: "images/penetrating2.jpg",
       title: "Pagpasok sa Wika",
       content: "Ang mundo natin ay lubos na nangangailangan ng mga sagot, at napakaraming boses. Ang Rhapsody of Realities na available sa lahat ng kilalang wika ng mundo ay SAGOT ng Diyos at ito ay naging posible sa pamamagitan ng aming mga Tagapagsalin.",
       btnMsg: "Magbigay"
     },
     {
-      img: "images/sponsorPhilippine.jpg",
+      img: "images/enlist2.jpg",
       title: "HANAPIN ANG MGA SPONSOR",
       content: " hikayatin ang iba na sumali. Hikayatin ang mga kaibigan, pamilya, kasamahan, institusyon, organisasyon at marami pang iba na makipagtulungan sa amin at ipadala ang Rhapsody sa buong mundo",
       btnMsg: "Mag-refer ng Kaibigan"
@@ -137,7 +137,7 @@ export const cardInfoFilipino = [
       btnMsg: "Matuto Pa"
     },
     {
-      img: "images/ror.webp",
+      img: "images/philipinerhapsody.jpg",
       title: "Tungkol sa Rhapsody of Realities",
       content: "Ang pang-araw-araw na debosyonal na Rhapsody of Realities ay isang gabay sa buhay, na idinisenyo upang mapahusay ang iyong espirituwal na paglaki at pag-unlad sa pamamagitan ng pagdadala sa iyo ng isang sariwang pananaw mula sa Salita ng Diyos araw-araw.",
       btnMsg: "Bisitahin ang Website"

@@ -1,15 +1,18 @@
 <script>
     import Clipboard from "$lib/components/Clipboard.svelte"
+    import LoginModal from "$lib/components/LoginModal.svelte"
     let { form } = $props()
+
+    let dialogRef
     
 </script>
 
 {#if form?.error}
 <dialog id="my_modal_12" class="modal " open>
   <div class="modal-box">
-    <h1 class="text-3xl text-red-700 font-bold">Oops! Something Went Wrong.</h1>
-    <h3 class="text-xl mt-3">{form.error}</h3>
+    <h1 class="text-3xl text-red-700 font-bold">{form.error}</h1>
     <div class="modal-action">
+      <button onclick={() => dialogRef.showModal()} class="btn btn-primary font-bold">Register</button>
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
         <button class="btn">Close</button>
@@ -18,6 +21,8 @@
   </div>
 </dialog>
 {/if}
+
+<LoginModal bind:dialog={dialogRef}/>
 
 {#if form?.success || form?.message}
 <dialog id="my_modal_13" class="modal" open>
