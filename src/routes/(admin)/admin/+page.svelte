@@ -1,3 +1,12 @@
+<script>
+  import { goto } from '$app/navigation';
+
+  function redirectToAdmin() {
+    goto('https://reachoutadmin.vercel.app');
+  }
+</script>
+
+
 <main class="bg-white h-[100vh]">
     <div class="overflow-x-auto">
         <table class="table table-lg">
