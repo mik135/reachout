@@ -35,3 +35,10 @@
       </div>
     </nav>
   </footer>
+
+
+  <style lang="postcss">
+    p {
+        @apply text-neutral-content
+    }
+  </style>
