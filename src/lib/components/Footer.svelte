@@ -1,4 +1,4 @@
-<footer class="footer footer-center bg-neutral text-neutral-content py-10 px-4 lg:p-10 mt-10 ">
+<footer class="footer footer-center bg-neutral text-[#D7DDE4] py-10 px-4 lg:p-10 mt-10 ">
     <aside>
       <p class="font-bold text-2xl uppercase">
         Contact Us
